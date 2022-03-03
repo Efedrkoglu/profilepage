@@ -1,5 +1,29 @@
 <html>
     <head>
+        <script>
+
+            function topla(){
+                var a = document.getElementById("sayi1").value;
+                var b = document.getElementById("sayi2").value;
+                sonuc.value=parseInt(a)+parseInt(b);
+            }
+            function cikar(){
+                var a = document.getElementById("sayi1").value;
+                var b = document.getElementById("sayi2").value;
+                sonuc.value=parseInt(a)-parseInt(b);
+            }
+            function carp(){
+                var a = document.getElementById("sayi1").value;
+                var b = document.getElementById("sayi2").value;
+                sonuc.value=parseInt(a)*parseInt(b);
+            }
+            function bol(){
+                var a = document.getElementById("sayi1").value;
+                var b = document.getElementById("sayi2").value;
+                sonuc.value=parseInt(a)/parseInt(b);
+            }
+
+        </script>
         <style>
             
             #liste{
@@ -45,6 +69,17 @@
             <li>test 2</li>
             <li>test 3</li>
         </ul>
+
+        <div>
+            <input id="sayi1">
+            <input id="sayi2">
+            =
+            <input id="sonuc"><br>
+            <input type="button" id="topla" value="+" onclick="topla()">
+            <input type="button" id="cikar" value="-" onclick="cikar()">
+            <input type="button" id="carp" value="*" onclick="carp()">
+            <input type="button" id="bol" value="/" onclick="bol()">
+        </div>
 
         <footer>
             <iframe src="footer.html" style="width: 100%;" scrolling="no" frameBorder="0"></iframe>
