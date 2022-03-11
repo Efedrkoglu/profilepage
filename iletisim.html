@@ -1,29 +1,45 @@
 <html>
     <head>
+        <style>
+            #iletisimdivi{
+                height: 250px;
+                text-align: center;
+                margin: 40px;
+            }
 
+            .iletisim::placeholder{
+                text-align: center;
+            }
+
+            .iletisim{
+                border-radius: 5px;
+                margin: 2px;
+            }
+
+        </style>
     </head>
     <body>
         <header>
             <iframe src="header.html" style="width: 100%; height: 110px;" scrolling="no" frameBorder="0"></iframe>
         </header>
+
         <div style="text-align: center;">
             <a href="anasayfa.html" style="text-decoration:none;">ANASAYFA</a>
             <a href="hakkımda.html" style="text-decoration: none;">HAKKIMDA</a>
             <a href="dersprogrami.html" style="text-decoration: none;">DERS</a>
         </div>
-        <div style="text-align: center;">
-            Adı:
-            <input type="text"><br> 
-            E-posta:
-            <input type="email"><br>
-            Tel:
-            <input type="tel"><br>
-            Hakkımda:
-            <input type="text"><br>
-            <input type="button" value="Gönder">
+
+        <div id="iletisimdivi">           
+            <input class="iletisim" type="text" placeholder="İsim"><br> 
+            <input class="iletisim" type="text" placeholder="Soy İsim"><br>
+            <input class="iletisim" type="tel" placeholder="Tel"><br>
+            <input class="iletisim" type="email" placeholder="E-posta"><br><br>
+            <input class="iletisim" type="button" value="Gönder">
         </div>
+
         <footer>
             <iframe src="footer.html" style="width: 100%;" scrolling="no" frameBorder="0"></iframe>
         </footer>
+
     </body>
 </html>

@@ -24,20 +24,37 @@
             }
 
         </script>
+
         <style>
-            
-            #liste{
-                color: blue;
-                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+            h1{
+                margin: 0px 5px 5px 5px;
+                font-size: 30px;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             }
 
-            .menu{
-                color: red;
-                font-style: italic;
+            input[type="button"]{
+                margin: 5px;
+            }
+
+            #sayi1{
+                margin: 0px 0px 0px 5px;
+            }
+
+            #sonuc{
+                margin: 0px 5px 0px 0px;
+            }
+
+            #calculator{
+                border: solid black 2px;
+                margin: 10px 10px 30px 0px;
+                background-color: rgb(201, 201, 201);
+                display: inline-block;
             }
 
         </style>
     </head>
+
     <body>
         <header>
             <iframe src="header.html" style="width: 100%; height: 110px;" scrolling="no" frameBorder="0"></iframe>
@@ -58,19 +75,8 @@
               </svg>
         </div>
 
-        <ul id="liste">
-            <li>deneme 1</li>
-            <li>deneme 2</li>
-            <li>deneme 3</li>
-        </ul>
-
-        <ul class="menu">
-            <li>test 1</li>
-            <li>test 2</li>
-            <li>test 3</li>
-        </ul>
-
-        <div>
+        <div id="calculator">
+            <h1>Hesap Makinesi</h1>
             <input id="sayi1">
             <input id="sayi2">
             =
